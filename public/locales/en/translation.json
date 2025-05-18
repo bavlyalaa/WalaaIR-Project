@@ -1,0 +1,46 @@
+{
+    "Header": {
+          "overview": "Overview",
+    "profile": "Profile",
+    "board": "Board & Management",
+    "sharePerformance": "Share Performance",
+    "financialInformation": "Financial Information",
+    "investorsPresentation": "Investors Presentation",
+    "disclosures": "Disclosures",
+    "corporateActions": "Corporate Actions",
+    "majorShareholders": "Major Shareholders",
+    "businessSegments": "Business Segments",
+    "projects": "Projects",
+    "mergersAcquisitions": "Mergers & Acquisitions",
+    "contactIr": "Contact IR"
+    },
+  "marketData": {
+    "lastTrade": "Last Trade",
+    "volume": "Volume",
+ 
+    "change": "Change",
+    "turnover": "Turnover",
+ 
+    "percentageChange": "Change (%)",
+    "transactions": "Transactions",
+ 
+    "open": "Open",
+    "marketValue": "Market Value",
+ 
+    "low": "Low",
+    "averageVolume3": "Avg. Volume (3M)",
+ 
+    "high": "High",
+    "averageTurnover3": "Avg. Turnover (3M)",
+ 
+    "prevClose": "Prev. Close",
+    "averageTransactions3": "Avg. Transaction (3M)",
+ 
+    "months3M": "Change (3M)",
+    "months12M": "Change (12M)",
+ 
+    "months6M": "Change (6M)",
+    "ytd": "YTD"
+  }
+
+}
