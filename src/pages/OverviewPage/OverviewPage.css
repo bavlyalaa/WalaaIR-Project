@@ -1,0 +1,28 @@
+.market-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFFFFF; 
+  border: 1px solid #C4C4C4; 
+
+  font-family: 'Graphik Arabic Web', sans-serif;
+}
+
+.market-data-table th, 
+.market-data-table td {
+  padding: 12px 16px;
+  border: 1px  #C4C4C4; 
+  text-align: left;
+}
+
+.market-data-table th {
+  font-weight: bold;
+  background-color: #F8F8F8; 
+}
+/* في ملف الـ CSS الخاص بك */
+.market-data-container {
+  border: 1px solid #C4C4C4; /* بوردر رمادي */
+  background-color: #FFFFFF; /* خلفية بيضاء */
+  border-radius: 8px; /* زوايا مدورة (اختياري) */
+  padding: 20px; /* مسافة داخلية */
+  margin: 16px 0; /* مسافة خارجية (اختياري) */
+}

@@ -25,7 +25,8 @@ const HeaderNavbar = () => {
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto d-flex align-items-center gap-2">
           <NavDropdown
-            title={"Investor Relations"}
+          
+  title={<span style={{ color: "#FFFFFF" }}>{("Investor Relations")}</span>}
             id="InvestorRelationsDropdown"
           >
               <NavDropdown.Item href="">{"Overvirew"}</NavDropdown.Item>
