@@ -1,0 +1,19 @@
+.market-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #c4c4c4;
+  font-family: "Graphik Arabic Web", sans-serif;
+}
+
+.market-data-table th,
+.market-data-table td {
+  padding: 12px 16px;
+  border: 1px solid #c4c4c4;
+  text-align: left;
+}
+
+.market-data-table th {
+  font-weight: bold;
+  background-color: #f8f8f8;
+}

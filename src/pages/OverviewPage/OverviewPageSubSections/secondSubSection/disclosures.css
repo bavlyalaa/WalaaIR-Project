@@ -1,0 +1,22 @@
+.disc-img {
+width: 33%;
+padding: 20px;
+position: relative;
+}
+
+.disc-img:hover {
+  transform: translateY(-5px);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.disclosures-header {
+  background-image: url("../../../../assets/DisclouriesBackGroumd.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+}
