@@ -1,14 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  FaMapMarkerAlt,
-  FaUser,
-  FaPhone,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaMapMarkerAlt, FaUser, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const ContactIR = () => {
   return (
-    <Container className="data-container">
+    <Container className="data-container h-100 d-flex flex-column">
       <div className="title-wrapper mb-4">
         <h1 className="title">Contact IR</h1>
       </div>
@@ -52,10 +47,9 @@ const ContactIR = () => {
         </Col>
       </Row>
 
-      {/* Download IR App Section */}
-      <div className=" mt-5">
+      <div className="mt-5 flex-grow-1">
         <h2 className="mb-4" style={{color:"#185a7d"}}>Download IR App</h2>
-        <div className="d-flex  gap-3 flex-wrap">
+        <div className="d-flex gap-3 flex-wrap">
           <a href="https://apps.apple.com/app" target="_blank" rel="noopener noreferrer">
             <img
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
@@ -71,6 +65,15 @@ const ContactIR = () => {
             />
           </a>
         </div>
+      </div>
+
+      <div className="mt-auto ">
+        <button
+          className="btn rounded-pill"
+          style={{ backgroundColor: "#53B4DB", color: "#FFFFFF" }}
+        >
+          {"More"}
+        </button>
       </div>
     </Container>
   );

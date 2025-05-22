@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-   min-height: 100vh;
+  min-height: 100vh;
   height: auto;
   background-image: url('../../assets/HeaderBackground.png');
   background-size: cover;
@@ -13,33 +13,36 @@
 
 .custom-container {
   max-width: 1600px;
-  
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero-card table,
 .hero-card table tr,
 .hero-card table td {
   background-color: inherit !important;
   color: inherit !important;
 }
+
 .herocontent {
   border-left: 3px solid #cd0633;
   padding-left: 30px;
   margin-top: 120px;
   margin-left: 120px;
-    position: relative;
+  position: relative;
   z-index: 2;
 }
 
-.hero-card {
-  background: rgba(24, 90, 125, 0.85) !important;
-  backdrop-filter: blur(35px);
-  -webkit-backdrop-filter: blur(35px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255,0.1 );
-}
-
-
+/* Responsive adjustment for .herocontent to remove margin on smaller screens */
 @media (max-width: 992px) {
+  .herocontent {
+    margin-left: 15px;
+    margin-top: 60px;
+    padding-left: 20px;
+  }
+}
 
 .hero-card {
   background: rgba(24, 90, 125, 0.85) !important;
@@ -47,20 +50,27 @@
   -webkit-backdrop-filter: blur(35px);
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  overflow: auto; 
+  width: 100%;
+  max-width: 385px;
+  margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .hero-card {
+    overflow-x: auto;
+  }
 }
+
 #overlay {
-  position: relative; 
-  display: flex; 
-background: var(--unnamed-color-185a7d) 0% 0% no-repeat padding-box;
-background: #185A7D 0% 0% no-repeat padding-box;
-border-radius: 16px;
-opacity: 1;
-backdrop-filter: blur(15px);
--webkit-backdrop-filter: blur(24px);
+  position: relative;
+  display: flex;
+  background: #185A7D 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(24px);
 }
+
 .custom-breadcrumb {
   --bs-breadcrumb-divider: '>';
   padding: 0.75rem 1rem;
@@ -70,7 +80,7 @@ backdrop-filter: blur(15px);
 .custom-breadcrumb .breadcrumb-item.not-active {
   color: #A1B6C1 !important;
   pointer-events: none;
-  cursor: default; 
+  cursor: default;
 }
 
 .custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
@@ -79,4 +89,11 @@ backdrop-filter: blur(15px);
 
 .custom-breadcrumb .breadcrumb-item.active {
   color: white !important;
+}
+
+/* Make navbar toggle button visible on small screens */
+@media (max-width: 992px) {
+  .header-navbar {
+    flex-wrap: nowrap;
+  }
 }

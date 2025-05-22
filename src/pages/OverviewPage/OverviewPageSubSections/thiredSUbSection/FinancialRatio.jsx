@@ -1,8 +1,9 @@
 import { Table } from "react-bootstrap";
 import "../../OverviewPage.css";
+
 const FinancialRatios = () => {
   return (
-    <div className="container data-container ">
+    <div className="container data-container h-100 d-flex flex-column">
       <div className="title-wrapper">
         <h1 className="title">{"Financial Ratio"}</h1>
       </div>
@@ -48,7 +49,7 @@ const FinancialRatios = () => {
         </tbody>
       </Table>
 
-      <div className="d-flex justify-content-end">
+      <div className="mt-auto">
         <button
           className="btn rounded-pill"
           style={{ backgroundColor: "#53B4DB", color: "#FFFFFF" }}

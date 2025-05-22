@@ -2,14 +2,14 @@ import "../../../OverviewPage/OverviewPage.css";
 import "../firstSubSection/firstSubSection.css"
 const MarketData = () => {
   return (
-    <div className="container data-container ">
+    <div className="container data-container h-100 d-flex flex-column">
       <div className="title-wrapper">
         <h1 className="title" id="market-data-title">
           {"Market Data"}
         </h1>
       </div>
 
-      <div>
+      <div className="">
         <table  className="table justify-content-between">
           <tbody>
             <tr>

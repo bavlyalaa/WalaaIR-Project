@@ -4,8 +4,9 @@
   background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
-  margin: 20px;
+  /* margin: 20px; */
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: #00000029 ;
@@ -38,4 +39,33 @@
   color: #185a7d !important;
   font-family: "Graphik Arabic Web", Medium;
   font-size: 23px;
+}
+.subsection {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body {
+  overflow-x: hidden;
+}
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+}
+
+.subsection {
+  min-height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .subsection {
+    min-height: auto;
+    padding: 1rem 0;
+  }
 }

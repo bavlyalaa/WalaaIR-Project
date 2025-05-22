@@ -6,7 +6,7 @@ const HeroCard = () => {
     <Card
       className="hero-card text-center text-light d-flex flex-column"
       id="overlay"
-      style={{ width: "385px" }}
+      style={{ width: "385px", maxWidth: "100%" }}
     >
       <div>
         <Card.Header className="w-100">
@@ -16,7 +16,7 @@ const HeroCard = () => {
             <span>Walaa Cooperative Insurance Co.</span>
           </div>
         </Card.Header>
-        <div className="">
+        <div>
           <Card.Body className="flex-grow-1 d-flex flex-column justify-content-between">
             <Card.Title style={{ flexShrink: 0 }}>
               <div className="d-flex flex-column gap-3">
@@ -69,7 +69,7 @@ const HeroCard = () => {
                     </svg>
                     <span> {"0.46"}</span>
                   </button>
-                  <span className=" fw-semibold" style={{ color: "#00D200" }}>
+                  <span className="fw-semibold" style={{ color: "#00D200" }}>
                     2.24%
                   </span>
                 </div>

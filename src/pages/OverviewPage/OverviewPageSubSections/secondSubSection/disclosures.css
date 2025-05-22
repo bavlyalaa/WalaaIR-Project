@@ -1,8 +1,4 @@
-.disc-img {
-width: 33%;
-padding: 20px;
-position: relative;
-}
+
 
 .disc-img:hover {
   transform: translateY(-5px);
@@ -18,5 +14,16 @@ position: relative;
   background-size: cover;
   background-position: center;
   color: white;
+}
 
+.disc-img-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.disc-img {
+width: 100%;
+padding: 20px;
+position: relative;
 }

@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../../assets/Logo.png"; 
+import logo from "../../assets/Logo.png";
 
 const HeaderNavbar = () => {
   return (
@@ -24,12 +24,11 @@ const HeaderNavbar = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto d-flex align-items-center gap-2">
-          <NavDropdown
-          
-  title={<span style={{ color: "#FFFFFF" }}>{("Investor Relations")}</span>}
-            id="InvestorRelationsDropdown"
-          >
-              <NavDropdown.Item href="">{"Overvirew"}</NavDropdown.Item>
+            <NavDropdown
+              title={<span style={{ color: "#FFFFFF" }}>{("Investor Relations")}</span>}
+              id="InvestorRelationsDropdown"
+            >
+              <NavDropdown.Item href="">{"Overview"}</NavDropdown.Item>
               <NavDropdown.Item href="">{"Profile"}</NavDropdown.Item>
               <NavDropdown.Item href="">
                 {"Board of Directors"}
@@ -54,10 +53,10 @@ const HeaderNavbar = () => {
                 {"Mergers & Acquisitions"}
               </NavDropdown.Item>
               <NavDropdown.Item href="">{"Contact IR"}</NavDropdown.Item>
-          </NavDropdown>
+            </NavDropdown>
 
-          <Button className="languge-switcher">{"English"}</Button>
-            </Nav>
+            <Button className="languge-switcher">{"English"}</Button>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

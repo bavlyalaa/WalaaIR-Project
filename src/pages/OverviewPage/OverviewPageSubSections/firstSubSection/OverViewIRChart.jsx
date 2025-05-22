@@ -3,6 +3,7 @@ import HighchartsReact from "highcharts-react-official";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { useState } from "react";
 import "../../../OverviewPage/OverviewPage.css";
+import { useMemo } from "react";
 import "../firstSubSection/firstSubSection.css";
 const OverViewIRChart = () => {
   const buttonOptions = [
@@ -17,81 +18,93 @@ const OverViewIRChart = () => {
   ];
   const [activeButton, setActiveButton] = useState("1 Day");
 
-  const options = {
-    chart: {
-      type: "line",
-      width: null,
-    },
-    title: {
-      text: null,
-    },
-    xAxis: {
-      categories: [
-        "10.30",
-        "11.00",
-        "11.30",
-        "12.00",
-        "12.30",
-        "01.00",
-        "01.30",
-        "02.00",
-        "02.30",
-        "03.00",
-        "03.30",
-        "04.00",
-      ],
-    },
-    yAxis: {
-      title: {
-        text: "",
+  const options = useMemo(
+    () => ({
+      chart: {
+        type: "line",
+        width: null,
       },
-    },
-    tooltip: {
-      crosshairs: false,
-      shared: true,
-    },
-    plotOptions: {
-      spline: {
-        marker: {
-          radius: 1,
-          lineColor: "#FFFFFF",
-          lineWidth: 1,
+      title: {
+        text: null,
+      },
+      xAxis: {
+        categories: [
+          "10.30",
+          "11.00",
+          "11.30",
+          "12.00",
+          "12.30",
+          "01.00",
+          "01.30",
+          "02.00",
+          "02.30",
+          "03.00",
+          "03.30",
+          "04.00",
+        ],
+      },
+      yAxis: {
+        title: {
+          text: "",
         },
       },
-    },
-    series: [
-      {
-        name: "Walaa",
-        data: [
-          5.2,
-          5.7,
-          8.7,
-          13.9,
-          18.2,
-          21.4,
-          25.0,
-          {
-            y: 26.4,
-          },
-          22.8,
-          17.5,
-          12.1,
-          7.6,
-        ],
-        color: "#185A7D",
+      tooltip: {
+        crosshairs: false,
+        shared: true,
       },
-    ],
-    credits: { enabled: false },
-  };
+      plotOptions: {
+        series: {
+          events: {
+            legendItemClick: function () {
+              return false;
+            },
+          },
+        },
+      },
+      series: [
+        {
+          name: "Walaa",
+          data: [
+            5.2,
+            5.7,
+            8.7,
+            13.9,
+            18.2,
+            21.4,
+            25.0,
+            { y: 26.4 },
+            22.8,
+            17.5,
+            12.1,
+            7.6,
+          ],
+          color: "#185A7D",
+        },
+      ],
+      credits: {
+        enabled: false,
+      },
+      rangeSelector: {
+        enabled: false,
+      },
+      navigator: {
+        enabled: false,
+      },
+      scrollbar: {
+        enabled: false,
+      },
+    }),
+    []
+  );
 
   return (
-    <div className="container data-container  flex-grow">
+    <div className="container data-container h-100 d-flex flex-column ">
       <div className="title-wrapper">
         <h1 className="title">{"Walaa Cooperative Insurance Co."}</h1>
       </div>
 
       <ButtonGroup
-        className="m-1 flex-grow  rounded-pill d-flex justify-content-between shadow-sm"
+        className="m-1 flex-grow rounded-pill d-flex justify-content-between flex-wrap shadow-sm"
         style={{ border: "1px solid #185A7D" }}
       >
         {buttonOptions.map((option) => (
@@ -118,7 +131,11 @@ const OverViewIRChart = () => {
         className="mt-4"
         style={{ width: "100%", height: "100%", minHeight: "400px" }}
       >
-        <HighchartsReact highcharts={Highcharts} options={options} />
+        <HighchartsReact
+          highcharts={Highcharts}
+          constructorType={"stockChart"}
+          options={options}
+        />
       </div>
 
       <div className="d-flex justify-content-end">

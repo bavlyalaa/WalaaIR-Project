@@ -1,0 +1,45 @@
+{
+    "marketData": {
+    "lastTrade": "آخر سعر (%)",
+    "volume": "حجم التداول",
+ 
+    "change": "التغير",
+    "turnover": "قيمة التداول",
+ 
+    "percentageChange": "التغير (%)",
+    "transactions": "عدد الصفقات",
+ 
+    "open": "الافتتاح",
+    "marketValue": "القيمة السوقية",
+ 
+    "low": "الأدنى",
+    "averageVolume3": "م. حجم التداول (3 أشهر)",
+ 
+    "high": "الأعلى",
+    "averageTurnover3": "م. قيمة التداول (3 أشهر)",
+ 
+    "prevClose": "الإغلاق السابق",
+    "averageTransactions3": "م.عدد الصفقات (3 أشهر)",
+ 
+    "months3M": "التغير (3 أشهر)",
+    "months12M": "التغير (12 أشهر)",
+ 
+    "months6M": "التغير (6 أشهر)",
+    "ytd": "التغير من بداية العام"
+  },
+  "header": {
+    "overview": "معلومات الشركة",
+    "profile": "ملف الشركة",
+    "board": "الهيكل التنظيمي",
+    "sharePerformance": "أداء السهم",
+    "financialInformation": "البيانات المالية",
+    "investorsPresentation": "عرض المستثمرين",
+    "disclosures": "الإفصاحات",
+    "corporateActions": "إجراءات الشركة",
+    "majorShareholders": "كبار المساهمين",
+    "businessSegments": "التحليل القطاعي",
+    "projects": "المشاريع",
+    "mergersAcquisitions": "الاندماجات والإستحواذات",
+    "contactIr": "تواصل مع الشركة"
+  }
+}

@@ -5,13 +5,13 @@ const CorporateActions = () => {
   const buttonOptions = ["Recent Changes", "Recent Dividends"];
   const [activeButton, setActiveButton] = useState("Recent Changes");
   return (
-    <div className="container data-container ">
+    <div className="container data-container h-100 d-flex flex-column">
       <div className="title-wrapper">
         <h1 className="title">{"Corporate Actions"}</h1>
       </div>
 
       <ButtonGroup
-        className="m-1 flex-grow  rounded-pill d-flex justify-content-between shadow-sm"
+        className="m-1 flex-grow rounded-pill d-flex justify-content-between shadow-sm"
         style={{ border: "1px solid #185A7D" }}
       >
         {buttonOptions.map((option) => (
@@ -20,14 +20,11 @@ const CorporateActions = () => {
             variant="outline-primary"
             active={activeButton === option}
             onClick={() => setActiveButton(option)}
-            className={`rounded-pill border-0 ${
-              activeButton === option ? "active" : ""
-            }`}
+            className={`rounded-pill border-0 ${activeButton === option ? "active" : ""}`}
             style={{
               color: "#185A7D",
               fontSize: "15px",
-              backgroundColor:
-                activeButton === option ? "#91D9F6" : "transparent",
+              backgroundColor: activeButton === option ? "#91D9F6" : "transparent",
             }}
           >
             {option}
@@ -71,7 +68,8 @@ const CorporateActions = () => {
           </Table>
         </div>
       </div>
-      <div className="d-flex justify-content-end">
+
+      <div className="mt-auto">
         <button
           className="btn rounded-pill"
           style={{ backgroundColor: "#53B4DB", color: "#FFFFFF" }}
